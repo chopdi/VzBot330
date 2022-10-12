@@ -7,7 +7,7 @@ max_upload_size = 1024
 [file_manager]
 config_path = ~/klipper_config
 log_path = ~/klipper_logs
-enable_object_processing = False
+enable_object_processing = True
 
 [authorization]
 cors_domains = 
@@ -54,4 +54,16 @@ path = ~/sonar
 origin = https://github.com/mainsail-crew/sonar.git
 primary_branch = main
 managed_services = sonar
+
+[update_manager pa_cal]
+type = git_repo
+path = ~/klipper-pa_cal
+origin = https://github.com/ksanislo/klipper-pa_cal.git
+is_system_service = False
+
+[update_manager print_area_bed_mesh]
+type = git_repo
+path = ~/print_area_bed_mesh
+origin = https://github.com/Turge08/print_area_bed_mesh.git
+is_system_service = False
 
